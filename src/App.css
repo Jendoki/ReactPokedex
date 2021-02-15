@@ -1,0 +1,48 @@
+.header {
+  background-color: #C82333;
+  color: white;
+  height: 8vh;
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  height: 3em;
+  margin: 1em;
+}
+
+.title {
+  text-align: center;
+  margin: 0.4em;
+}
+
+.button {
+  display: inline-block;
+  margin: 1em;
+}
+
+aside {
+  height: 92vh;
+  border-right: 2px solid black;
+  text-align: center;
+}
+
+aside li {
+  margin: 30px;
+  list-style: none;
+}
+
+.content {
+  background-color: bisque;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+
+.pokeblue {
+  background-color: #2059a7;
+}
