@@ -3,7 +3,7 @@ A pokédex made in React, with the help of PokéAPI
 
 Team : Jennifer LECOQ
 
-
+HTML/CSS, React
 
 Features :
 
