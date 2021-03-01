@@ -1,5 +1,6 @@
 import Header from "./Header";
-import Aside from "./Aside";
+import AsideGuest from "./AsideGuest";
+import AsideLogged from "./AsideLogged";
 import Content from "./Content";
 import Footer from "./Footer";
 
@@ -7,16 +8,14 @@ const Home = (props) => {
   return (
     <>
       <Header />
-      <div class="row">
-        <div class="col-2">
-          <Aside />
+      <div className="row">
+        <div className="col-1.5">
+          <AsideGuest />
         </div>
-        <div class="col-10">
+        <div className="col-10">
           <Content />
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

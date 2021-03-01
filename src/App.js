@@ -3,6 +3,7 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from "./Components/Home";
+import ListPoke from "./Components/ListPoke";
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={Home} />
+      </Switch>
+      <Switch>
+        <Route path="/listpokemon" exact component={ListPoke} />
       </Switch>
     </Router>
     </>

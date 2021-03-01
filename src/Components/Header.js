@@ -4,20 +4,20 @@ import {Button} from "react-bootstrap";
 const Header = (props) => {
   return (
     <>
-      <nav class="header">
-        <div class="row">
-          <div class="col-2">
+      <nav className="header">
+        <div className="row">
+          <div className="col-2">
             <a href="/"><Logo /></a>
           </div>
-          <div class="col-8">
-            <h1 class="title">React Poké Dex</h1>
+          <div className="col-8">
+            <h1 className="title">React Pokédex</h1>
           </div>
 
-          <div class="col-2">
-            <div class="button">
+          <div className="col-2">
+            <div className="button">
             <Button variant="outline-light">Log In</Button>
             </div>
-            <div class="button">
+            <div className="button">
             <Button variant="outline-light">Register</Button>
             </div>
             

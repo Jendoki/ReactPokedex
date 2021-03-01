@@ -2,7 +2,7 @@ const Logo = (props) => {
     return (
       <>
         <div>
-            <img class="logo" src="/Assets/img/pokeball.png" />
+            <img className="logo" src="/Assets/img/image0.png" />
         </div>
       </>
     );
