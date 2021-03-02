@@ -15,7 +15,9 @@ const AsideGuest = (props) => {
           <Button variant="danger">Items</Button>
         </li>
         <li>
-          <Button variant="danger">Egg groups</Button>
+          <a href="/listegg">
+            <Button variant="danger">Egg groups</Button>
+          </a>
         </li>
 
         <h3>Search</h3>
