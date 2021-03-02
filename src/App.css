@@ -85,6 +85,10 @@ aside li {
   text-transform: capitalize;
 }
 
+.center {
+  text-align: center;
+}
+
 .pokeimg {
   float: left;
   max-width: 100px;

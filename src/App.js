@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Components/Home";
 import ListPoke from "./Components/ListPoke";
 import ListEgg from "./Components/ListEgg";
+import ListItem from "./Components/ListItem";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
       </Switch>
       <Switch>
         <Route path="/listpokemon" exact component={ListPoke} />
+      </Switch>
+      <Switch>
+        <Route path="/listitem" exact component={ListItem} />
       </Switch>
       <Switch>
         <Route path="/listegg" exact component={ListEgg} />

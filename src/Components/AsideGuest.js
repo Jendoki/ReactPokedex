@@ -12,7 +12,9 @@ const AsideGuest = (props) => {
           </a>
         </li>
         <li>
-          <Button variant="danger">Items</Button>
+          <a href="/listitem">
+            <Button variant="danger">Items</Button>
+          </a>
         </li>
         <li>
           <a href="/listegg">

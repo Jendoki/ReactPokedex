@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import Pokecard from "./Pokecard";
+import EgglistPokecard from "./EgglistPokecard";
 
 const ContentListEgg = (props) => {
   const [ressource, setRessource] = useState("indeterminate");
@@ -138,9 +139,10 @@ const ContentListEgg = (props) => {
           Water 3
         </Button>
       </div>
+      <h3 className="capitalize center">{ressource}</h3>
       <div className="containercards">
         {list.pokemon_species.map((element) => (
-          <Pokecard pokename={element.name} url={element.url} />
+          <EgglistPokecard pokename={element.name} />
         ))}
       </div>
     </>
