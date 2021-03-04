@@ -1,8 +1,8 @@
-import Header from "./Header";
-import AsideGuest from "./AsideGuest";
-import AsideLogged from "./AsideLogged";
-import Content from "./Content";
-import Footer from "./Footer";
+import Header from "./Main/Header";
+import AsideGuest from "./Main/AsideGuest";
+import AsideLogged from "./Main/AsideLogged";
+import Content from "./Main/Content";
+import Footer from "./Main/Footer";
 
 const Home = (props) => {
   return (

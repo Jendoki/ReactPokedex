@@ -3,9 +3,9 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from "./Components/Home";
-import ListPoke from "./Components/ListPoke";
-import ListEgg from "./Components/ListEgg";
-import ListItem from "./Components/ListItem";
+import ListPoke from "./Components//ListPokemon/ListPoke";
+import ListEgg from "./Components/ListEggGroup/ListEgg";
+import ListItem from "./Components/ListItem/ListItem";
 
 function App() {
   return (

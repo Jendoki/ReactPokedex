@@ -1,8 +1,8 @@
-import Header from "./Header";
-import AsideGuest from "./AsideGuest";
-import AsideLogged from "./AsideLogged";
+import Header from "../Main/Header";
+import AsideGuest from "../Main/AsideGuest";
+import AsideLogged from "../Main/AsideLogged";
 import ContentListItem from "./ContentListItem.js";
-import Footer from "./Footer";
+import Footer from "../Main/Footer";
 
 const ListItem = (props) => {
   return (

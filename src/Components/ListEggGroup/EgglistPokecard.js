@@ -8,7 +8,6 @@ const EgglistPokecard = (props) => {
   const getInfos = async (url) => {
     const response = await fetch(url);
     const result = await response.json();
-    //console.log(result.name);
     return result;
   };
 
@@ -19,12 +18,14 @@ const EgglistPokecard = (props) => {
 
   return (
     <>
-      <div>
-        {pokeinfo.sprites ? (
-          <img className="pokeimg" src={pokeinfo.sprites.front_default} />
-        ) : (
-          <img className="pokeimg" src="/Assets/img/image0.png" />
-        )}
+      <div className="egglistimg">
+        <a href="/">
+          {pokeinfo.sprites ? (
+            <img className="pokeimg" src={pokeinfo.sprites.front_default} />
+          ) : (
+            <img className="pokeimg" src="/Assets/img/image0.png" />
+          )}
+        </a>
       </div>
     </>
   );

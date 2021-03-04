@@ -99,14 +99,29 @@ aside li {
   text-align: left;
 }
 
+.egglistimg:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.carditem {
+  border: 2px solid red;
+  border-radius: 20px;
+  width: 25em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 4vh;
+  padding: 5px;
+  display: inline-block;
+}
+
+.itemimg {
+  max-width: 25px;
+}
+
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px;
   line-height: 60px;
-}
-
-.pokeblue {
-  background-color: #2059a7;
 }

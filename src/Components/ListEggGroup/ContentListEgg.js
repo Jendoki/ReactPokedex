@@ -1,58 +1,16 @@
 import { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
-import Pokecard from "./Pokecard";
 import EgglistPokecard from "./EgglistPokecard";
 
 const ContentListEgg = (props) => {
   const [ressource, setRessource] = useState("indeterminate");
-  const [list, setList] = useState({
-    id: 11,
-    name: "indeterminate",
-    names: [
-      {
-        language: {
-          name: "ja-Hrkt",
-          url: "https://pokeapi.co/api/v2/language/1/",
-        },
-        name: "ふていけい",
-      },
-      {
-        language: { name: "ko", url: "https://pokeapi.co/api/v2/language/3/" },
-        name: "부정형",
-      },
-      {
-        language: { name: "fr", url: "https://pokeapi.co/api/v2/language/5/" },
-        name: "Amorphe",
-      },
-      {
-        language: { name: "de", url: "https://pokeapi.co/api/v2/language/6/" },
-        name: "Amorph",
-      },
-      {
-        language: { name: "es", url: "https://pokeapi.co/api/v2/language/7/" },
-        name: "Amorfo",
-      },
-      {
-        language: { name: "it", url: "https://pokeapi.co/api/v2/language/8/" },
-        name: "Amorfo",
-      },
-      {
-        language: { name: "en", url: "https://pokeapi.co/api/v2/language/9/" },
-        name: "Amorphous",
-      },
-    ],
-    pokemon_species: [
-      { name: "grimer", url: "https://pokeapi.co/api/v2/pokemon-species/88/" },
-      { name: "muk", url: "https://pokeapi.co/api/v2/pokemon-species/89/" }
-    ],
-  });
+  const [list, setList] = useState([]);
 
   const getInfos = async (ressource) => {
     const response = await fetch(
       `https://pokeapi.co/api/v2/egg-group/${ressource}`
     );
     const result = await response.json();
-    //console.log(result.pokemon_species);
     return result;
   };
 
@@ -141,9 +99,13 @@ const ContentListEgg = (props) => {
       </div>
       <h3 className="capitalize center">{ressource}</h3>
       <div className="containercards">
-        {list.pokemon_species.map((element) => (
-          <EgglistPokecard pokename={element.name} />
-        ))}
+        {list.pokemon_species ? (
+          list.pokemon_species.map((element) => (
+            <EgglistPokecard pokename={element.name} />
+          ))
+        ) : (
+          <p></p>
+        )}
       </div>
     </>
   );
