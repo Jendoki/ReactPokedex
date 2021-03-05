@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import EgglistPokecard from "./EgglistPokecard";
+import ScrollTop from "react-scrolltop-button";
 
 const ContentListEgg = (props) => {
   const [ressource, setRessource] = useState("indeterminate");
@@ -107,6 +108,7 @@ const ContentListEgg = (props) => {
           <p></p>
         )}
       </div>
+      <ScrollTop text="Back to top ⇧" style={{ backgroundColor: "#c82333", color: "white" }} />
     </>
   );
 };

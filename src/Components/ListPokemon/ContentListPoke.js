@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import Pokecard from "./Pokecard";
+import ScrollTop from "react-scrolltop-button";
 
 const ContentListePoke = (props) => {
   const [ressource, setRessource] = useState("?limit=151");
@@ -92,6 +93,7 @@ const ContentListePoke = (props) => {
           <p></p>
         )}
       </div>
+      <ScrollTop text="Back to top ⇧" style={{ backgroundColor: "#c82333", color: "white" }} />
     </>
   );
 };

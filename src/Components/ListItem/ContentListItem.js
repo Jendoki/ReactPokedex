@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button, DropdownButton, Dropdown } from "react-bootstrap";
+import ScrollTop from "react-scrolltop-button";
 import ItemlistCard from "./ItemlistCard.js";
 
 const ContentListItem = (props) => {
@@ -221,6 +222,7 @@ const ContentListItem = (props) => {
           )}
         </div>
       </div>
+      <ScrollTop text="Back to top ⇧" style={{ backgroundColor: "#c82333", color: "white" }} />
     </>
   );
 };
