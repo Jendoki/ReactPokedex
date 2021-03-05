@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import GetTypeImg from "./GetTypeImg";
 import GetStats from "./GetStats";
 import { Button } from "react-bootstrap";
+import GetFlavortext from "./GetFlavortext";
 
 const ContentPokemon = (props) => {
   const [pokeinfo, setPokeinfo] = useState([]);
@@ -124,6 +125,12 @@ const ContentPokemon = (props) => {
             </div>
           </div>
         </div>
+
+        {pokeinfo && pokeinfo.species ? (
+          <GetFlavortext url={pokeinfo.species.url} />
+        ) : (
+          <p></p>
+        )}
       </div>
     </>
   );

@@ -78,7 +78,7 @@ const Pokecard = (props) => {
               <div style={{ display: "inline-block" }}>
                 #{pokeinfo.id} -{" "}
                 <p style={{ display: "inline-block" }} className="capitalize">
-                  {props.pokename}
+                  {props.pokename.replaceAll('-', ' ')}
                 </p>
               </div>
             </h3>

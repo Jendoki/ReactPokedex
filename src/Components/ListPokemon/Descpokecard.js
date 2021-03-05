@@ -44,7 +44,7 @@ const Descpokecard = (props) => {
     <>
       {pokedesc.flavor_text_entries ? (
         <p className="card-text left">
-          {switchEntry()}
+          {switchEntry().replaceAll("", " ")}
         </p>
       ) : (
         <p>Couldn't load information on this pokémon, sorry!</p>
