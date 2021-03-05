@@ -13,7 +13,6 @@ const Descpokecard = (props) => {
   useEffect(() => {
     getDesc(props.url).then((result) => setPokedesc(result));
   }, [props.url]);
-  console.log(pokedesc);
 
   const switchEntry = () => { 
     if (pokedesc.flavor_text_entries[0].language.name === "en") {

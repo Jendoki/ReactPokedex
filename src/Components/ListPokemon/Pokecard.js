@@ -9,7 +9,6 @@ const Pokecard = (props) => {
   const getIndividualInfos = async (url) => {
     const response = await fetch(props.url);
     const resultindividual = await response.json();
-    //console.log(resultindividual);
     return resultindividual;
   };
 

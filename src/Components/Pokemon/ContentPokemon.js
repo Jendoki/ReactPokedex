@@ -3,6 +3,7 @@ import GetTypeImg from "./GetTypeImg";
 import GetStats from "./GetStats";
 import { Button } from "react-bootstrap";
 import GetFlavortext from "./GetFlavortext";
+import ScrollTop from "react-scrolltop-button";
 
 const ContentPokemon = (props) => {
   const [pokeinfo, setPokeinfo] = useState([]);
@@ -68,7 +69,7 @@ const ContentPokemon = (props) => {
 
           <div className="col-3 pokepagemaininf">
             <div>
-              <h2 className="capitalize">{pokeinfo.name}</h2>
+              <h2 className="capitalize">{pokeinfo && pokeinfo.name ? pokeinfo.name.replaceAll('-', ' ') : " "}</h2>
               <h4>#{pokeinfo.id}</h4>
             </div>
             <div className="row">
@@ -132,6 +133,7 @@ const ContentPokemon = (props) => {
           <p></p>
         )}
       </div>
+      <ScrollTop text="Back to top ⇧" style={{ backgroundColor: "#c82333", color: "white" }} />
     </>
   );
 };
