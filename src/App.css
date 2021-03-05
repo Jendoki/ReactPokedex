@@ -118,6 +118,42 @@ aside li {
   max-width: 25px;
 }
 
+.pokepagebtnsLeft {
+  padding-bottom: 5em;
+  text-align: left;
+  padding-right: 5em;
+}
+
+.pokepagebtnsRight {
+  padding-bottom: 5em;
+  text-align: right;
+  padding-left: 5em;
+}
+
+.pokepageimg {
+  border: 2px solid red;
+  border-radius: 20px;
+  width: 100%;
+  padding: 2em;
+  max-height: 20em;
+}
+
+.pokepagemaininf {
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.pokepagescndinf {
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.pokepagescndinf .row {
+  margin-bottom: 2em;
+}
+
 footer {
   position: absolute;
   bottom: 0;

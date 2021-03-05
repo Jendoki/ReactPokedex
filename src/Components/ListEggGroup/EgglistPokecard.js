@@ -4,6 +4,7 @@ const EgglistPokecard = (props) => {
   let name = props.pokename;
   const [pokeinfo, setPokeinfo] = useState([]);
   let url = `https://pokeapi.co/api/v2/pokemon/${name}`;
+  
 
   const getInfos = async (url) => {
     const response = await fetch(url);
@@ -14,16 +15,16 @@ const EgglistPokecard = (props) => {
   useEffect(() => {
     getInfos(url).then((result) => setPokeinfo(result));
   }, [url]);
-  console.log(pokeinfo.name);
+  let id = pokeinfo.id;
 
   return (
     <>
       <div className="egglistimg">
-        <a href="/">
+        <a href={"/pokemon/"+id}>
           {pokeinfo.sprites ? (
             <img className="pokeimg" src={pokeinfo.sprites.front_default} />
           ) : (
-            <img className="pokeimg" src="/Assets/img/image0.png" />
+            <p></p>
           )}
         </a>
       </div>

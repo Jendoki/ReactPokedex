@@ -3,7 +3,7 @@ import { Button, DropdownButton, Dropdown } from "react-bootstrap";
 import ItemlistCard from "./ItemlistCard.js";
 
 const ContentListItem = (props) => {
-  const [ressource, setRessource] = useState("12");
+  const [ressource, setRessource] = useState("10");
   const [list, setList] = useState([]);
 
   const getItems = async (ressource) => {

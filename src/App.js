@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import ListPoke from "./Components//ListPokemon/ListPoke";
 import ListEgg from "./Components/ListEggGroup/ListEgg";
 import ListItem from "./Components/ListItem/ListItem";
+import Pokemon from "./Components/Pokemon/Pokemon";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       </Switch>
       <Switch>
         <Route path="/listegg" exact component={ListEgg} />
+      </Switch>
+      <Switch>
+        <Route path="/pokemon/:id" exact component={Pokemon} />
       </Switch>
     </Router>
     </>

@@ -18,6 +18,8 @@ const Pokecard = (props) => {
   }, [props.url]);
   console.log(pokeinfo);
 
+  let id = pokeinfo.id;
+
   const getWeight = (weight) => {
     const kg = weight / 10;
     return kg;
@@ -64,34 +66,39 @@ const Pokecard = (props) => {
 
   return (
     <>
-      <div className="cardpoke">
-        <div className="card-body">
-          <h4 className="card-title">
-            {pokeinfo.sprites ? (
-              <img className="pokeimg" src={pokeinfo.sprites.front_default} />
-            ) : (
-              <img className="pokeimg" src="/Assets/img/image0.png" />
-            )}
-            <div style={{ display: "inline-block" }}>
-              n°{pokeinfo.id} -{" "}
-              <p style={{ display: "inline-block" }} className="capitalize">
-                {props.pokename}
-              </p>
-            </div>
-            <div>
-              {pokeinfo.weight && pokeinfo.height ? (
-                getWeight(pokeinfo.weight) +
-                "kg - " +
-                getHeight(pokeinfo.height) +
-                " m"
+      <a href={"/pokemon/" + id} style={{ color: "black" }}>
+        <div className="cardpoke">
+          <div className="card-body">
+            <h3 className="card-title">
+              {pokeinfo.sprites ? (
+                <img className="pokeimg" src={pokeinfo.sprites.front_default} />
               ) : (
-                <p></p>
+                <img className="pokeimg" src="/Assets/img/image0.png" />
               )}
+              <div style={{ display: "inline-block" }}>
+                #{pokeinfo.id} -{" "}
+                <p style={{ display: "inline-block" }} className="capitalize">
+                  {props.pokename}
+                </p>
+              </div>
+            </h3>
+            <div>
+              <h4>
+                {pokeinfo.weight && pokeinfo.height ? (
+                  getWeight(pokeinfo.weight) +
+                  "kg - " +
+                  getHeight(pokeinfo.height) +
+                  " m"
+                ) : (
+                  <p></p>
+                )}
+              </h4>
             </div>
-          </h4>
-          {getFlavorText()}
+
+            {getFlavorText()}
+          </div>
         </div>
-      </div>
+      </a>
     </>
   );
 };
