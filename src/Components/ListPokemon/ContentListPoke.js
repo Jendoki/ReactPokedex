@@ -30,54 +30,63 @@ const ContentListePoke = (props) => {
     <>
       <div className="container">
         <Button
+          className="button"
           variant="danger"
           onClick={(event) => handleClick(event, "?limit=898")}
         >
           All
         </Button>
         <Button
+          className="button"
           variant="danger"
           onClick={(event) => handleClick(event, "?limit=151")}
         >
           Kanto
         </Button>
         <Button
+          className="button"
           variant="danger"
           onClick={(event) => handleClick(event, "?limit=100&offset=151")}
         >
           Johto
         </Button>
         <Button
+          className="button"
           variant="danger"
           onClick={(event) => handleClick(event, "?limit=135&offset=251")}
         >
           Hoenn
         </Button>
         <Button
+          className="button"
           variant="danger"
           onClick={(event) => handleClick(event, "?limit=107&offset=386")}
         >
           Sinnoh
         </Button>
         <Button
+          className="button"
           variant="danger"
           onClick={(event) => handleClick(event, "?limit=156&offset=493")}
         >
           Unova
         </Button>
         <Button
+          className="button"
           variant="danger"
           onClick={(event) => handleClick(event, "?limit=72&offset=649")}
         >
           Kalos
         </Button>
         <Button
+          className="button"
           variant="danger"
           onClick={(event) => handleClick(event, "?limit=88&offset=721")}
         >
           Alola
         </Button>
         <Button
+          className="button"
           variant="danger"
           onClick={(event) => handleClick(event, "?limit=89&offset=809")}
         >
@@ -93,7 +102,10 @@ const ContentListePoke = (props) => {
           <p></p>
         )}
       </div>
-      <ScrollTop text="Back to top ⇧" style={{ backgroundColor: "#c82333", color: "white" }} />
+      <ScrollTop
+        text="Back to top ⇧"
+        style={{ backgroundColor: "#c82333", color: "white" }}
+      />
     </>
   );
 };

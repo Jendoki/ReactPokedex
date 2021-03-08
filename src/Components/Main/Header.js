@@ -1,5 +1,5 @@
 import Logo from "./Logo";
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 const Header = (props) => {
   return (
@@ -7,7 +7,9 @@ const Header = (props) => {
       <nav className="header">
         <div className="row">
           <div className="col-2">
-            <a href="/"><Logo /></a>
+            <a href="/">
+              <Logo />
+            </a>
           </div>
           <div className="col-8">
             <h1 className="title">React Pokédex</h1>
@@ -15,13 +17,15 @@ const Header = (props) => {
 
           <div className="col-2">
             <div className="button">
-            <Button variant="outline-light">Log In</Button>
+              <a href="/login">
+                <Button variant="outline-light">Log In</Button>
+              </a>
             </div>
             <div className="button">
-            <Button variant="outline-light">Register</Button>
+              <a href="/register">
+                <Button variant="outline-light">Register</Button>
+              </a>
             </div>
-            
-            
           </div>
         </div>
       </nav>

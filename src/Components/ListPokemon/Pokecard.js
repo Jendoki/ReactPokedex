@@ -15,7 +15,6 @@ const Pokecard = (props) => {
   useEffect(() => {
     getIndividualInfos(props.url).then((result) => setPokeinfo(result));
   }, [props.url]);
-  console.log(pokeinfo);
 
   let id = pokeinfo.id;
 

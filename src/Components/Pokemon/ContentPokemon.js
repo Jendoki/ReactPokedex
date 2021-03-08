@@ -18,7 +18,6 @@ const ContentPokemon = (props) => {
   const getInfos = async (geturl) => {
     const response = await fetch(geturl);
     const result = await response.json();
-    console.log(result);
     return result;
   };
 

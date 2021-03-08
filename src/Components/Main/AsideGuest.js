@@ -25,10 +25,14 @@ const AsideGuest = (props) => {
         <h3>Search</h3>
 
         <li>
-          <Button variant="danger">Pokémon</Button>
+          <a href="/searchpokemon">
+            <Button variant="danger">Pokémon</Button>
+          </a>
         </li>
         <li>
-          <Button variant="danger">Items</Button>
+          <a href="/searchitem">
+            <Button variant="danger">Items</Button>
+          </a>
         </li>
       </aside>
     </>
